@@ -1,0 +1,16 @@
+// นำเข้า Google Fonts: Mitr
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap');
+
+// กำหนด Font ให้ Bootstrap
+$font-family-sans-serif: 'Mitr', sans-serif;
+$font-family-base: 'Mitr', sans-serif;
+
+// ปรับแต่งสีตัวแปรของ Bootstrap ก่อน Import
+$primary: #0d6efd;
+
+// นำเข้า Bootstrap SCSS ทั้งหมด
+@import "bootstrap/scss/bootstrap";
+
+body {
+    font-family: 'Mitr', sans-serif;
+}
