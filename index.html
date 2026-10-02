@@ -1,60 +1,273 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ยินดีต้อนรับสู่เว็บไซต์ของฉัน · เหนือ iApp</title>
 
     <!-- Google Fonts: Mitr -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
 
-    <header class="container-fluid">
-        <div class="row bg-dark text-white text-center">
-            <h1>ยินดีต้อนรับสู่เว็บไซต์ของฉัน</h1>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-navy-gradient shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="/">
+                <span class="badge bg-primary rounded-circle p-2 d-flex align-items-center justify-content-center"
+                    style="width: 32px; height: 32px;">
+                    <i class="bi bi-code-slash text-white"></i>
+                </span>
+                <span>681310310 เหนือ <span class="text-info">iApp</span></span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-1">
+                    <li class="nav-item">
+                        <a class="nav-link active px-3 rounded-pill bg-white bg-opacity-10 text-white" href="/">
+                            <i class="bi bi-house-door-fill me-1"></i> หน้าแรก
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 text-white-50" href="/article.html">
+                            <i class="bi bi-grid-fill me-1"></i> เมนูร้านอาหาร
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Top Header Banner -->
+    <header class="container-fluid bg-navy-gradient text-white py-5 hero-glow mb-5 shadow-sm">
+        <div class="container py-4 text-center">
+            <span
+                class="badge bg-white bg-opacity-10 text-info border border-info border-opacity-25 px-3 py-2 rounded-pill mb-3">
+                <i class="bi bi-stars me-1"></i> Personal Profile & Portfolio
+            </span>
+            <h1 class="display-5 fw-bold mb-2 text-white">ยินดีต้อนรับสู่เว็บไซต์ของฉัน</h1>
+            <p class="lead text-white-50 mx-auto mb-0" style="max-width: 650px;">
+                พื้นที่แนะนำข้อมูลส่วนตัว ประวัติโดยย่อ และสิ่งที่สนใจในชีวิตประจำวัน
+            </p>
         </div>
     </header>
 
-    <article class="container">
-        <div class="row">
-            <header class="row">
-                <p>ชื่อ เหนือ iApp</p>
-                <p>อายุ 20 ปี</p>
-                <p>เพศ หญิง</p>
-                <p>สัญชาติ ไทย</p>
-                <p>ศาสนา พุทธ</p>
-            </header>
-            <hr>
-            <section class="col-md-6 bg-info mb-3">
-                <h3>สิ่งที่ชอบ</h3>
-                <ul>
-                    <li>ฉันชอบกินไก่</li>
-                    <li>ฉันชอบนอน</li>
-                    <li>ฉันชอบเล่นเกม</li>
-                </ul>
+    <!-- Main Content Section -->
+    <article class="container pb-4">
+
+        <!-- Profile Header Card -->
+        <header class="profile-card p-4 p-md-5 mb-4">
+            <div class="row align-items-center g-4">
+                <div class="col-auto">
+                    <div class="profile-avatar d-flex align-items-center justify-content-center text-white">
+                        <i class="bi bi-person-fill" style="font-size: 2.5rem;"></i>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-flex flex-wrap align-items-center gap-2 mb-1">
+                        <h2 class="h3 fw-bold mb-0 text-dark">681310310 เหนือ iApp</h2>
+                        <span
+                            class="badge bg-primary-subtle text-primary border border-primary-subtle px-3 py-1 rounded-pill">
+                            <i class="bi bi-patch-check-fill me-1"></i> ข้อมูลส่วนตัว
+                        </span>
+                    </div>
+                    <p class="text-secondary mb-3 small">ยินดีที่ได้รู้จักทุกคน เข้ามาทักทายพูดคุยกันได้นะคะ</p>
+
+                    <div class="row g-2">
+                        <div class="col-6 col-sm-6 col-md-3">
+                            <div class="info-chip">
+                                <i class="bi bi-calendar3 fs-5 text-primary"></i>
+                                <div>
+                                    <small class="text-muted d-block" style="font-size: 0.75rem;">อายุ</small>
+                                    <strong>20 ปี</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-3">
+                            <div class="info-chip">
+                                <i class="bi bi-gender-female fs-5 text-primary"></i>
+                                <div>
+                                    <small class="text-muted d-block" style="font-size: 0.75rem;">เพศ</small>
+                                    <strong>หญิง</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-3">
+                            <div class="info-chip">
+                                <i class="bi bi-flag fs-5 text-primary"></i>
+                                <div>
+                                    <small class="text-muted d-block" style="font-size: 0.75rem;">สัญชาติ</small>
+                                    <strong>ไทย</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-3">
+                            <div class="info-chip">
+                                <i class="bi bi-sun fs-5 text-primary"></i>
+                                <div>
+                                    <small class="text-muted d-block" style="font-size: 0.75rem;">ศาสนา</small>
+                                    <strong>พุทธ</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Likes and Dislikes Grid -->
+        <div class="row g-4 mb-4">
+            <!-- สิ่งที่ชอบ -->
+            <section class="col-md-6">
+                <div class="custom-card card-accent-blue p-4 h-100">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="rounded-circle bg-primary bg-opacity-10 text-primary p-3 d-flex align-items-center justify-content-center"
+                            style="width: 48px; height: 48px;">
+                            <i class="bi bi-heart-fill fs-5"></i>
+                        </div>
+                        <div>
+                            <h3 class="h5 fw-bold mb-0 text-primary">สิ่งที่ชอบ</h3>
+                            <small class="text-muted">สิ่งที่ทำแล้วมีความสุข</small>
+                        </div>
+                    </div>
+                    <div class="list-unstyled mb-0">
+                        <div class="custom-list-item d-flex align-items-center">
+                            <i class="bi bi-check-circle-fill text-primary fs-5 me-3"></i>
+                            <span class="fw-medium text-dark">ฉันชอบกินไก่</span>
+                        </div>
+                        <div class="custom-list-item d-flex align-items-center">
+                            <i class="bi bi-check-circle-fill text-primary fs-5 me-3"></i>
+                            <span class="fw-medium text-dark">ฉันชอบทะเล</span>
+                        </div>
+                        <div class="custom-list-item d-flex align-items-center">
+                            <i class="bi bi-check-circle-fill text-primary fs-5 me-3"></i>
+                            <span class="fw-medium text-dark">ฉันชอบเล่นเกม</span>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section class="col-md-6 bg-danger mb-3">
-                <h3>สิ่งที่ไม่ชอบ</h3>
-                <ul>
-                    <li>ฉันไม่ชอบกินปลา</li>
-                    <li>ฉันไม่ชอบนอน</li>
-                    <li>ฉันไม่ชอบเล่นเกม</li>
-                </ul>
+
+            <!-- สิ่งที่ไม่ชอบ -->
+            <section class="col-md-6">
+                <div class="custom-card card-accent-navy p-4 h-100">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="rounded-circle bg-secondary bg-opacity-10 text-secondary p-3 d-flex align-items-center justify-content-center"
+                            style="width: 48px; height: 48px;">
+                            <i class="bi bi-shield-x fs-5"></i>
+                        </div>
+                        <div>
+                            <h3 class="h5 fw-bold mb-0 text-dark">สิ่งที่ไม่ชอบ</h3>
+                            <small class="text-muted">สิ่งที่พยายามหลีกเลี่ยง</small>
+                        </div>
+                    </div>
+                    <div class="list-unstyled mb-0">
+                        <div class="custom-list-item d-flex align-items-center">
+                            <i class="bi bi-x-circle-fill text-danger text-opacity-75 fs-5 me-3"></i>
+                            <span class="fw-medium text-dark">ฉันไม่ชอบกินผัก</span>
+                        </div>
+                        <div class="custom-list-item d-flex align-items-center">
+                            <i class="bi bi-x-circle-fill text-danger text-opacity-75 fs-5 me-3"></i>
+                            <span class="fw-medium text-dark">ฉันไม่ชอบกินเผ็ด</span>
+                        </div>
+                        <div class="custom-list-item d-flex align-items-center">
+                            <i class="bi bi-x-circle-fill text-danger text-opacity-75 fs-5 me-3"></i>
+                            <span class="fw-medium text-dark">ฉันไม่ชอบผี</span>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <hr>
-            <footer class="container-fluid bg-dark text-white p-4">
-                <p>ข้อมูลติดต่อ [EMAIL_ADDRESS]</p>
-                <p>โทร 012-345-6789</p>
-                <p>ที่อยู่ 123 หมู่ 4 ต.บางเขน อ.เมือง จ.กรุงเทพมหานคร 10110</p>
-            </footer>
         </div>
+
+        <!-- Quick Link Banner to Restaurant Album -->
+        <div
+            class="p-4 rounded-4 bg-white border border-primary-subtle shadow-sm mb-4 d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+            <div class="d-flex align-items-center gap-3">
+                <div class="rounded-circle bg-primary text-white p-3 d-flex align-items-center justify-content-center"
+                    style="width: 52px; height: 52px;">
+                    <i class="bi bi-shop fs-4"></i>
+                </div>
+                <div>
+                    <h4 class="h6 fw-bold mb-1 text-dark">ชมร้านอาหารของฉัน (เมนูแนะนำ 9 รายการ)</h4>
+                    <p class="text-secondary small mb-0">ดูหน้า Album เมนูอาหาร 681310310 พร้อมรูปภาพสวยงาม</p>
+                </div>
+            </div>
+            <a href="/article.html"
+                class="btn btn-primary px-4 py-2 rounded-pill fw-medium d-inline-flex align-items-center gap-2 text-nowrap shadow-sm">
+                ไปยังหน้าร้านอาหาร <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+
     </article>
 
+    <!-- Footer Contact -->
+    <footer class="footer-navy text-white pt-5 pb-4 mt-5">
+        <div class="container">
+            <div class="row g-4 align-items-center pb-4 border-bottom border-white border-opacity-10">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                        <span class="badge bg-primary rounded-circle p-2">
+                            <i class="bi bi-code-slash text-white"></i>
+                        </span>
+                        <h5 class="fw-bold mb-0 text-white">681310310 เหนือ iApp</h5>
+                    </div>
+                    <p class="text-white-50 small mb-0">
+                        เว็บไซต์ส่วนตัว พัฒนาด้วย Bootstrap 5 + Vite บน Docker
+                    </p>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row g-3">
+                        <div class="col-sm-5">
+                            <div class="d-flex align-items-start gap-2">
+                                <i class="bi bi-envelope-at-fill text-info mt-1"></i>
+                                <div>
+                                    <small class="text-white-50 d-block">ข้อมูลติดต่อ</small>
+                                    <a href="mailto:chailangka_a@silpakorn.edu"
+                                        class="text-white text-decoration-none small text-break">
+                                        chailangka_a@silpakorn.edu
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="d-flex align-items-start gap-2">
+                                <i class="bi bi-telephone-fill text-info mt-1"></i>
+                                <div>
+                                    <small class="text-white-50 d-block">โทร</small>
+                                    <span class="text-white small">012-345-6789</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="d-flex align-items-start gap-2">
+                                <i class="bi bi-geo-alt-fill text-info mt-1"></i>
+                                <div>
+                                    <small class="text-white-50 d-block">ที่อยู่</small>
+                                    <span class="text-white small">123 หมู่ 4 ต.บางเขน อ.เมือง จ.กรุงเทพมหานคร
+                                        10110</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-4 text-center text-white-50 small">
+                © 2026 681310310 เหนือ iApp · ออกแบบด้วยธีมสีขาวและน้ำเงิน (White & Blue Theme)
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Vite -->
     <script type="module" src="/src/main.js"></script>
 </body>
 

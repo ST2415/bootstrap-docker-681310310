@@ -7,10 +7,115 @@ $font-family-base: 'Mitr', sans-serif;
 
 // ปรับแต่งสีตัวแปรของ Bootstrap ก่อน Import
 $primary: #0d6efd;
+$dark: #0a192f;
 
 // นำเข้า Bootstrap SCSS ทั้งหมด
 @import "bootstrap/scss/bootstrap";
 
 body {
     font-family: 'Mitr', sans-serif;
+    background-color: #f4f7fb;
+    color: #1e293b;
+}
+
+// ตกแต่ง White & Blue Theme
+.bg-navy-gradient {
+    background: linear-gradient(135deg, #071931 0%, #0d3b66 50%, #1d4ed8 100%);
+}
+
+.hero-glow {
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: -50%;
+        right: -10%;
+        width: 350px;
+        height: 350px;
+        background: radial-gradient(circle, rgba(56, 189, 248, 0.2) 0%, rgba(56, 189, 248, 0) 70%);
+        border-radius: 50%;
+        pointer-events: none;
+    }
+}
+
+.profile-card {
+    background: #ffffff;
+    border-radius: 1.25rem;
+    box-shadow: 0 10px 30px rgba(13, 110, 253, 0.07);
+    border: 1px solid rgba(219, 234, 254, 0.8);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 15px 35px rgba(13, 110, 253, 0.12);
+    }
+}
+
+.profile-avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #1d4ed8 0%, #38bdf8 100%);
+    box-shadow: 0 8px 20px rgba(29, 78, 216, 0.25);
+}
+
+.info-chip {
+    background: #f0f7ff;
+    border: 1px solid #dbeafe;
+    border-radius: 0.75rem;
+    padding: 0.65rem 1rem;
+    color: #1e40af;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.2s ease;
+
+    &:hover {
+        background: #e0f2fe;
+        border-color: #93c5fd;
+    }
+}
+
+.custom-card {
+    background: #ffffff;
+    border-radius: 1.25rem;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+    border: 1px solid #e2e8f0;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
+    }
+}
+
+.card-accent-blue {
+    border-top: 4px solid #2563eb !important;
+}
+
+.card-accent-navy {
+    border-top: 4px solid #1e3a8a !important;
+}
+
+.custom-list-item {
+    background: #f8fafc;
+    border-radius: 0.75rem;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #edf2f7;
+    transition: all 0.2s ease;
+
+    &:hover {
+        background: #ffffff;
+        border-color: #bfdbfe;
+        transform: translateX(4px);
+    }
+}
+
+.footer-navy {
+    background: #071931;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
