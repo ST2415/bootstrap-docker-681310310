@@ -14,4 +14,8 @@
 2. Clone โปรเจกต์นี้ลงเครื่อง:
    ```bash
    git clone [https://github.com/ST2415/bootstrap-docker-681310310.git](https://github.com/ST2415/bootstrap-docker-681310310.git)
+<<<<<<< HEAD
    cd bootstrap-docker-assignment
+=======
+   cd bootstrap-docker-assignment
+>>>>>>> 4c28f22 (Add readme.md)
