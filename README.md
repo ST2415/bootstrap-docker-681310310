@@ -13,5 +13,6 @@
 1. เปิดโปรแกรม **Docker Desktop**
 2. Clone โปรเจกต์นี้ลงเครื่อง:
    ```bash
-   git clone [https://github.com/ST2415/bootstrap-docker-681310310.git](https://github.com/ST2415/bootstrap-docker-681310310.git)
-    cd bootstrap-docker-assignment
+   git clone https://github.com/ST2415/bootstrap-docker-681310310.git
+   cd bootstrap-docker-681310310
+   ```
